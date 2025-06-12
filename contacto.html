@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link id="tema-estilo" rel="stylesheet" href="estilos.css">
+      </head>
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="formacion.html">Formación</a></li>
+              <li><a href="experiencia.html">Experiencia</a></li>
+              <li><a href="proyectos.html">Proyectos</a></li>
+              <li><a href="cv.html">CV</a></li>
+              <li><a href="aficiones.html">Aficiones</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="juego.html">Juego</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <p>¿Quieres decirme algo? ¡Completa este formulario!</p>
+
+            <form id="form_contacto" method="POST" action="envio_falso.html" onsubmit="procesa_envio(event);">
+                <p><label for="nombre">Nombre*:</label> <input type="text" id="nombre" name="nombre" required></p>
+                <p><label for="fecha_nacimiento">Fecha de nacimiento:</label> <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"></p>
+                <p><label for="email">Email*:</label> <input type="email" id="email" name="email" required></p>
+                <p><label for="telefono">Teléfono móvil:</label> <input type="tel" id="telefono" name="telefono"></p>
+                <p><label for="color">Color favorito:</label> <input type="color" id="color" name="color"></p>
+
+                <p><label for="pokemon_contacto">Pokémon inicial:</label>
+                    <select id="pokemon_contacto" name="pokemon">
+                        <option value="25">Pikachu</option>
+                        <option value="4" selected>Charmander</option>
+                        <option value="1">Bulbasaur</option>
+                        <option value="7">Squirtle</option>
+                        <option value="94">Gengar</option>
+                        <option value="133">Eevee</option>
+                    </select>
+                </p>
+
+                <p><label for="mensaje">Mensaje*:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </p>
+
+                <p><output id="salida">Completa los campos obligatorios marcados con *</output></p>
+                <p><input type="submit" value="Enviar"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024-2025 Hector Megias</p>
+    </footer>
+</body>
+</html>
